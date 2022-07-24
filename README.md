@@ -37,6 +37,9 @@ $ sudo pip3 install jetson-stats
     ~~~
     export PATH=/usr/src/tensorrt/bin/:$PATH
     ~~~
+   - Pytorch -> ONNX -> tensorrt sample
+    - [リンク1 Pytorch 公式](https://pytorch.org/blog/running-pytorch-models-on-jetson-nano/)
+    - [リンク2 Jupyter notebook](https://github.com/NVIDIA/TensorRT/blob/master/quickstart/IntroNotebooks/4.%20Using%20PyTorch%20through%20ONNX.ipynb)
 ## Reference
 - [NVIDIA DEVELOPER, Getting Started with Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit)
 - [GitHub, dusty-nv, jetson-inference](https://github.com/dusty-nv/jetson-inference)
