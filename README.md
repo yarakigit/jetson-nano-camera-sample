@@ -30,6 +30,8 @@ $ sudo pip3 install jetson-stats
 - 2ピンのファン
   - [取り付け方](http://neoview.blog.jp/archives/31704137.html)
 
+- [TensorRTをpipからインストール](https://zenn.dev/fate_shelled/scraps/46dfef81ec8440)   
+
 ## Reference
 - [NVIDIA DEVELOPER, Getting Started with Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit)
 - [GitHub, dusty-nv, jetson-inference](https://github.com/dusty-nv/jetson-inference)
