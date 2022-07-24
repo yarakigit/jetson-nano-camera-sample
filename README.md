@@ -27,6 +27,8 @@ $ sudo pip3 install jetson-stats
   -  [simplescreenrecorder](https://ry0.github.io/blog/2016/02/21/simplescreenrecorder/#gsc.tab=0)
 - ジャンパピン
   - [ヨドバシのリンク](https://www.yodobashi.com/product-detail/000000341309927595/)
+- 2ピンのファン
+  - [取り付け方](http://neoview.blog.jp/archives/31704137.html)
 
 ## Reference
 - [NVIDIA DEVELOPER, Getting Started with Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit)
