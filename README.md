@@ -42,7 +42,10 @@ $ sudo pip3 install jetson-stats
     - [リンク2 Jupyter notebook](https://github.com/NVIDIA/TensorRT/blob/master/quickstart/IntroNotebooks/4.%20Using%20PyTorch%20through%20ONNX.ipynb)
   - trtexecでエラーが出たので対処法をメモ
     - [nvidiaのコミュニティで同様のエラーについて議論されていたので参考にした](https://forums.developer.nvidia.com/t/ishufflelayer-applied-to-shape-tensor-must-have-0-or-1-reshape-dimensions-dimensions-were-1-2/200183)
-    - [Polygraphy](https://github.com/NVIDIA/TensorRT/tree/master/tools/Polygraphy)のリポジトリをクローンしてビルド
+    - [Polygraphy](https://github.com/NVIDIA/TensorRT/tree/master/tools/Polygraphy)のリポジトリを参考にビルド
+      ~~~bash
+      $ python -m pip install colored polygraphy --extra-index-url https://pypi.ngc.nvidia.com
+      ~~~
       - Pythonのモジュールが足りないと怒られたので追加でインストール
         ~~~bash
         $ pip install onnx-graphsurgeon
