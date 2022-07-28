@@ -65,7 +65,7 @@ $ sudo pip3 install jetson-stats
 
 - 書籍
   -  [Jetson Nano超入門](https://www.amazon.co.jp/Jetson-Nano%E8%B6%85%E5%85%A5%E9%96%80-Japan-User-Group/dp/4800712513/ref=asc_df_4800712513/?tag=jpgo-22&linkCode=df0&hvadid=407550551951&hvpos=&hvnetw=g&hvrand=10416878901026062658&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1009745&hvtargid=pla-1044960961872&psc=1&th=1&psc=1)
-    - 第1版 (第2版も出ていた)
+     - 第1版 (第2版も出ていた)
 
   - [Jetson NanoではじめるエッジAI入門](https://www.amazon.co.jp/Jetson-Nano%E3%81%A7%E3%81%AF%E3%81%98%E3%82%81%E3%82%8B%E3%82%A8%E3%83%83%E3%82%B8AI%E5%85%A5%E9%96%80-%E5%9D%82%E6%9C%AC-%E4%BF%8A%E4%B9%8B/dp/4863543166)
     - まだ読んでない... 
