@@ -34,9 +34,13 @@ $ sudo pip3 install jetson-stats
 - 2ピンのファン (4ピンのファンだと動的に制御できる)
   - [取り付け方](http://neoview.blog.jp/archives/31704137.html)
 
+- [日本語入力, Mozc](https://toyo-interest.com/jetson-nano/jetson-nano%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%85%A5%E5%8A%9B%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B/)
+
+- [wifiドングル, そのまま使える](https://www.amazon.co.jp/gp/product/B008IFXQFU/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1)
+
 - [TensorRTをpipからインストール](https://zenn.dev/fate_shelled/scraps/46dfef81ec8440)   
   - JetPackにデフォルトでインストールされているので不要
-  
+ 
 - TensorRT
   - デフォルトだと**trtexec**のパスが通ってなかったので通す ([このURLを参考にした (YOLOv4-tinyを動かしてる)](https://zenn.dev/rain_squallman/articles/8781d3efef23b9caabc6))
     ~~~
