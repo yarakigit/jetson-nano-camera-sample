@@ -17,7 +17,11 @@ $ make resize
 $ make edge
 ~~~
 
-## memo
+## Reference
+- [NVIDIA DEVELOPER, Getting Started with Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit)
+- [GitHub, dusty-nv, jetson-inference](https://github.com/dusty-nv/jetson-inference)
+
+## memo (自分用)
 - **jtop**コマンドの導入
 ~~~ bash
 $ sudo apt install python3-pip
@@ -57,6 +61,3 @@ $ sudo pip3 install jetson-stats
       ~~~
       - model.onnx : input onnx file
       - folded.onnx : output onnx file
-## Reference
-- [NVIDIA DEVELOPER, Getting Started with Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit)
-- [GitHub, dusty-nv, jetson-inference](https://github.com/dusty-nv/jetson-inference)
