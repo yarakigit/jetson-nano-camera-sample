@@ -35,7 +35,8 @@ $ sudo pip3 install jetson-stats
   - [取り付け方](http://neoview.blog.jp/archives/31704137.html)
 
 - [TensorRTをpipからインストール](https://zenn.dev/fate_shelled/scraps/46dfef81ec8440)   
-
+  - JetPackにデフォルトでインストールされているので不要
+  
 - TensorRT
   - デフォルトだと**trtexec**のパスが通ってなかったので通す ([このURLを参考にした (YOLOv4-tinyを動かしてる)](https://zenn.dev/rain_squallman/articles/8781d3efef23b9caabc6))
     ~~~
