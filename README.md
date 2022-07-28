@@ -40,6 +40,14 @@ $ sudo pip3 install jetson-stats
   - Pytorch -> ONNX -> tensorrt sample
     - [リンク1 Pytorch 公式](https://pytorch.org/blog/running-pytorch-models-on-jetson-nano/)
     - [リンク2 Jupyter notebook](https://github.com/NVIDIA/TensorRT/blob/master/quickstart/IntroNotebooks/4.%20Using%20PyTorch%20through%20ONNX.ipynb)
+  - trtexecでエラーが出たので対処法をメモ
+    - [nvidiaのコミュニティで同様のエラーについて議論されていたので参考にした](https://forums.developer.nvidia.com/t/ishufflelayer-applied-to-shape-tensor-must-have-0-or-1-reshape-dimensions-dimensions-were-1-2/200183)
+    - [Polygraphy](https://github.com/NVIDIA/TensorRT/tree/master/tools/Polygraphy)のリポジトリをクローンしてビルド
+      - Pythonのモジュールが足りないと怒られたので追加でインストール
+        ~~~bash
+        $ pip install onnx-graphsurgeon
+        $ pip install onnxruntime
+        ~~~
 ## Reference
 - [NVIDIA DEVELOPER, Getting Started with Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit)
 - [GitHub, dusty-nv, jetson-inference](https://github.com/dusty-nv/jetson-inference)
