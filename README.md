@@ -31,7 +31,7 @@ $ sudo pip3 install jetson-stats
   -  [simplescreenrecorder](https://ry0.github.io/blog/2016/02/21/simplescreenrecorder/#gsc.tab=0)
 - ジャンパピン
   - [ヨドバシのリンク](https://www.yodobashi.com/product-detail/000000341309927595/)
-- 2ピンのファン
+- 2ピンのファン (4ピンのファンだと動的に制御できる)
   - [取り付け方](http://neoview.blog.jp/archives/31704137.html)
 
 - [TensorRTをpipからインストール](https://zenn.dev/fate_shelled/scraps/46dfef81ec8440)   
@@ -62,3 +62,10 @@ $ sudo pip3 install jetson-stats
       ~~~
       - model.onnx : input onnx file
       - folded.onnx : output onnx file
+
+- 書籍
+  -  [Jetson Nano超入門](https://www.amazon.co.jp/Jetson-Nano%E8%B6%85%E5%85%A5%E9%96%80-Japan-User-Group/dp/4800712513/ref=asc_df_4800712513/?tag=jpgo-22&linkCode=df0&hvadid=407550551951&hvpos=&hvnetw=g&hvrand=10416878901026062658&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1009745&hvtargid=pla-1044960961872&psc=1&th=1&psc=1)
+    - 第1版 (第2版も出ていた)
+
+  - [Jetson NanoではじめるエッジAI入門](https://www.amazon.co.jp/Jetson-Nano%E3%81%A7%E3%81%AF%E3%81%98%E3%82%81%E3%82%8B%E3%82%A8%E3%83%83%E3%82%B8AI%E5%85%A5%E9%96%80-%E5%9D%82%E6%9C%AC-%E4%BF%8A%E4%B9%8B/dp/4863543166)
+    - まだ読んでない... 
