@@ -51,7 +51,7 @@ $ sudo pip3 install jetson-stats
         $ pip install onnx-graphsurgeon
         $ pip install onnxruntime
         ~~~
-    - (このリポジトリを参考にコマンドを実行)[https://github.com/NVIDIA/TensorRT/tree/master/tools/Polygraphy/examples/cli/surgeon/02_folding_constants]
+    - [このリポジトリを参考にコマンドを実行](https://github.com/NVIDIA/TensorRT/tree/master/tools/Polygraphy/examples/cli/surgeon/02_folding_constants)
       ~~~bash
       $ polygraphy surgeon sanitize model.onnx --fold-constants -o folded.onnx
       ~~~
