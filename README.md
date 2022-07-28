@@ -51,6 +51,12 @@ $ sudo pip3 install jetson-stats
         $ pip install onnx-graphsurgeon
         $ pip install onnxruntime
         ~~~
+    - (このリポジトリを参考にコマンドを実行)[https://github.com/NVIDIA/TensorRT/tree/master/tools/Polygraphy/examples/cli/surgeon/02_folding_constants]
+      ~~~bash
+      $ polygraphy surgeon sanitize model.onnx --fold-constants -o folded.onnx
+      ~~~
+      - model.onnx : input onnx file
+      - folded.onnx : output onnx file
 ## Reference
 - [NVIDIA DEVELOPER, Getting Started with Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit)
 - [GitHub, dusty-nv, jetson-inference](https://github.com/dusty-nv/jetson-inference)
