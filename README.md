@@ -38,6 +38,8 @@ $ sudo pip3 install jetson-stats
 
 - [wifiドングル, そのまま使える](https://www.amazon.co.jp/gp/product/B008IFXQFU/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1)
 
+- [Firefoxの導入](https://www.kkaneko.jp/tools/ubuntu/firefox.html)
+
 - [TensorRTをpipからインストール](https://zenn.dev/fate_shelled/scraps/46dfef81ec8440)   
   - JetPackにデフォルトでインストールされているので不要
  
