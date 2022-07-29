@@ -70,7 +70,7 @@ $ sudo pip3 install jetson-stats
       - folded.onnx : output onnx file
 - pycudaのインストール
   - dockerには元から含まれていた
-  - PATHを通す (~/.bashrcに追記)
+  - PATHを通す (~/.bashrcに追記), 上2行いらないかも?
     ~~~bash
     export PATH=/usr/local/cuda-10.2/bin${PATH:+:${PATH}}
     export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
