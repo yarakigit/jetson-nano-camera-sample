@@ -68,6 +68,18 @@ $ sudo pip3 install jetson-stats
       ~~~
       - model.onnx : input onnx file
       - folded.onnx : output onnx file
+- pycudaのインストール
+  - dockerには元から含まれていた
+  - pipを更新
+    ~~~bash
+    $ pip3 install --upgrade pip
+    ~~~
+  - install pycuda
+    ~~~bash
+    $ pip3 install pycuda
+    ~~~
+    - [Install PyCUDA on Jetson Nano](https://medium.com/dropout-analytics/pycuda-on-jetson-nano-7990decab299)
+    - [Jetson.inference with custom network](https://forums.developer.nvidia.com/t/jetson-inference-with-custom-network/110533/7)
 
 - 書籍
   -  [Jetson Nano超入門](https://www.amazon.co.jp/Jetson-Nano%E8%B6%85%E5%85%A5%E9%96%80-Japan-User-Group/dp/4800712513/ref=asc_df_4800712513/?tag=jpgo-22&linkCode=df0&hvadid=407550551951&hvpos=&hvnetw=g&hvrand=10416878901026062658&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1009745&hvtargid=pla-1044960961872&psc=1&th=1&psc=1)
