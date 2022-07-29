@@ -70,6 +70,17 @@ $ sudo pip3 install jetson-stats
       - folded.onnx : output onnx file
 - pycudaのインストール
   - dockerには元から含まれていた
+  - PATHを通す (~/.bashrcに追記)
+    ~~~bash
+    export PATH=/usr/local/cuda-10.2/bin${PATH:+:${PATH}}
+    export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+    export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
+    export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+    ~~~
+    - PATHを反映
+      ~~~bash
+      $ source ~/.bashrc
+      ~~~
   - pipを更新
     ~~~bash
     $ pip3 install --upgrade pip
