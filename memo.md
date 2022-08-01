@@ -1,4 +1,14 @@
 # memo
+- リモートデスクトップ
+  ~~~bash
+  $ sudo apt install xrdp
+  ~~~
+  - 軽量デスクトップ
+  ~~~bash
+  $ sudo apt install xfce4 xfce4-goodies
+  $ echo xfce4-session > ~/.xsession
+  ~~~
+  
 - 4ピンのファン
   - J15ヘッダーに取り付け
   - [NF-A4x20](https://www.amazon.co.jp/Noctua-NF-A4x20-5V-PWM-5000rpm/dp/B071FNHVXN/ref=asc_df_B071FNHVXN/?tag=jpgo-22&linkCode=df0&hvadid=342534617213&hvpos=&hvnetw=g&hvrand=8592462775958626455&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1009745&hvtargid=pla-652903066979&psc=1)
