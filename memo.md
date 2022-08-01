@@ -1,4 +1,6 @@
 # memo
+- yolo nms
+  - [fast rcnn nms](https://github.com/rbgirshick/fast-rcnn/blob/master/lib/utils/nms.py)
 - リモートデスクトップ
   ~~~bash
   $ sudo apt install xrdp
