@@ -17,12 +17,12 @@
       ~~~
     - 冷却ファンの自動制御
       - 導入 [https://github.com/Pyrestone/jetson-fan-ctl](https://github.com/Pyrestone/jetson-fan-ctl)
-      	~~~bash
-	$ sudo apt install python3-dev
-	$ git clone https://github.com/Pyrestone/jetson-fan-ctl.git
-	$ cd jetson-fan-ctl
-	$ sudo ./install.sh
-	~~~
+        ~~~bash
+	      $ sudo apt install python3-dev
+	      $ git clone https://github.com/Pyrestone/jetson-fan-ctl.git
+	      $ cd jetson-fan-ctl
+	      $ sudo ./install.sh
+	      ~~~
 	
      - デフォルトの設定
        - 2秒間間隔, 20度でファン停止・50度でファン最大・20~50度は温度に比例して回転速度が上昇
@@ -30,18 +30,21 @@
        - MAX_PERF : 0または1以上の値, 1以上の値を設定するとファン自動制御開始時に*jetson_clocks*コマンドが実行されパフォーマンスが最大化
 
     - サービスを再起動
-      ~~bash
-      $ sudo service automagic-fan restart
-      ~~~
+       ~~~bash
+       $ sudo service automagic-fan restart
+       ~~~
+    
     - サービス有効化
       ~~~bash
       $ sudo service automagic-fan enable
       ~~~
+    
     - サービス無効化
       ~~~bash
       $ sudo service automagic-fan disable
       ~~~
-    -  サービス停止
+    
+    - サービス停止
       ~~~bash
       $ sudo service automagic-fan stop
       ~~~
