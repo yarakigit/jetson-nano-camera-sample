@@ -1,4 +1,6 @@
 # memo
+- [電源ボタン増設](http://www.neko.ne.jp/~freewing/raspberry_pi/nvidia_jetson_nano_power_switch/)
+	- [購入品](https://www.amazon.co.jp/gp/product/B01KJ11QG6/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1)
 - yolo nms
   - [fast rcnn nms](https://github.com/rbgirshick/fast-rcnn/blob/master/lib/utils/nms.py)
 - リモートデスクトップ
