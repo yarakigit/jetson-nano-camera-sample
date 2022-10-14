@@ -25,7 +25,18 @@ $ make edge
     - `192.168.x.x` : Your Host PC IP
     - `1234` : 任意のポート番号
   - Host PC (受信側)
-    - add later
+    - gstreamer のインストール (For Mac)
+      ~~~bash
+      $ brew install gstreamer gst-plugins-base gst-plugins-good gst-plugins-bad
+      $ brew install gst-plugins-ugly
+      ~~~
+
+    - RTPの受信
+      ~~~bash
+      $ gst-launch-1.0 -v udpsrc port=1234 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! autovideosink
+      ~~~
+      - 任意のポート番号を指定する
+      
 ## Reference
 - [NVIDIA DEVELOPER, Getting Started with Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit)
 - [GitHub, dusty-nv, jetson-inference](https://github.com/dusty-nv/jetson-inference)
