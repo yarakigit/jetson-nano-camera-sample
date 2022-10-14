@@ -17,6 +17,15 @@ $ make resize
 $ make edge
 ~~~
 
+- RTPでOpenGLの画面を転送する
+  - Jetson (送信側)
+    ~~~bash
+    $ python3 camera.py /dev/video0 rtp://192.168.x.x:1234
+    ~~~
+    - `192.168.x.x` : Your Host PC IP
+    - `1234` : 任意のポート番号
+  - Host PC (受信側)
+    - add later
 ## Reference
 - [NVIDIA DEVELOPER, Getting Started with Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit)
 - [GitHub, dusty-nv, jetson-inference](https://github.com/dusty-nv/jetson-inference)
