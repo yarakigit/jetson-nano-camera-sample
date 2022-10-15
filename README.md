@@ -32,10 +32,11 @@ $ make edge
       ~~~
 
     - RTPの受信
+      - 画面上に表示
       ~~~bash
       $ gst-launch-1.0 -v udpsrc port=1234 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! autovideosink
       ~~~
-      - ストリームファイルの生成
+      - ストリームファイルの生成 (動画を見る場合はVLCなどを別途インストールする)
       ~~~bash
       $ gst-launch-1.0 -v udpsrc port=1234 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay \
       ! h264parse ! mpegtsmux \
@@ -44,7 +45,9 @@ $ make edge
       playlist-location=stream.m3u8 \
       playlist-root=./
       ~~~
-      - 任意のポート番号を指定する
+        - [生成したストリームファイルをブラウザに表示するサンプル](https://github.com/yarakigit/stream-video-js-sample)
+          - 遅延がかなりある
+      - **任意のポート番号を指定する**
       
 ## Reference
 - [NVIDIA DEVELOPER, Getting Started with Jetson Nano Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit)
