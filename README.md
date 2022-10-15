@@ -24,6 +24,13 @@ $ make edge
     ~~~
     - `192.168.x.x` : Your Host PC IP
     - `1234` : 任意のポート番号
+    - `mjpeg`で転送
+      ~~~bash
+      $ python3 resize_yolo_format.py \
+        --input_width=1280 --input_height=720 --input_codec=mjpeg \
+        --output_width=416 --output_height=234 --output_codec=mjpeg \
+        /dev/video0 rtp://192.168.x.x:1234
+      ~~~
   - Host PC (受信側)
     - gstreamer のインストール (For Mac)
       ~~~bash
@@ -47,6 +54,14 @@ $ make edge
       ~~~
         - [生成したストリームファイルをブラウザに表示するサンプル](https://github.com/yarakigit/stream-video-js-sample)
           - 遅延がかなりある
+        - `mjpeg` で受信
+          ~~~bash
+          $ gst-launch-1.0 -v udpsrc port=1234 \
+          ! application/x-rtp,encoding-name=JPEG,payload=96 \
+          ! rtpjpegdepay \
+          ! jpegdec \
+          ! autovideosink
+          ~~~
       - **任意のポート番号を指定する**
       
 ## Reference
