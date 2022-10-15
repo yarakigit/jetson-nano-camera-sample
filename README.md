@@ -35,6 +35,15 @@ $ make edge
       ~~~bash
       $ gst-launch-1.0 -v udpsrc port=1234 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! decodebin ! videoconvert ! autovideosink
       ~~~
+      - ストリームファイルの生成
+      ~~~bash
+      $ gst-launch-1.0 -v udpsrc port=1234 caps = "application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay \
+      ! h264parse ! mpegtsmux \
+      ! hlssink max-files=8 target-duration=5 \
+      location=./segment%05d.ts \
+      playlist-location=stream.m3u8 \
+      playlist-root=./
+      ~~~
       - 任意のポート番号を指定する
       
 ## Reference
